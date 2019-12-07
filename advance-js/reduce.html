@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reduce Function</title>
+    </head>
+    <body>
+        <h1>Reduction</h1>
+    </body>
+    <script>
+        var pilots = [
+            {
+                id: 10,
+                name: "Poe Dameron",
+                years: 14,
+            },
+            {
+                id: 2,
+                name: "Temmin 'Snap' Wexley",
+                years: 30,
+            },
+            {
+                id: 41,
+                name: "Tallissan Lintra",
+                years: 16,
+            },
+            {
+                id: 99,
+                name: "Ello Asty",
+                years: 22,
+            }
+        ];
+        var totalYears = pilots.reduce(function (accumulator, pilot) {
+            return accumulator + pilot.years;
+        }, 0);
+        console.log(totalYears);
+    </script>
+</html>
